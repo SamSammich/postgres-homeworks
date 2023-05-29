@@ -4,7 +4,7 @@ Create Table students(
 	student_id serial,
 	first_name varchar,
 	last_name varchar,
-	dirthday date,
+	birthday date,
 	phone varchar
 )
 -- 2. Добавить в таблицу student колонку middle_name varchar
@@ -14,7 +14,7 @@ Alter Table students ADD Column middle_name varchar;
 Alter Table students Drop Column middle_name;
 
 -- 4. Переименовать колонку birthday в birth_date
-Alter Table students Rename Column dirthday to birth_date;
+Alter Table students Rename Column birthday to birth_date;
 
 -- 5. Изменить тип данных колонки phone на varchar(32)
 Alter Table students Alter Column phone Set Data Type varchar(32);
